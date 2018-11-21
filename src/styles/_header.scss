@@ -1,0 +1,22 @@
+
+
+
+.header {
+	margin: 70px auto;
+
+	.header-link {
+		text-decoration: none;
+		color: $primary-color;
+		background: white;
+		padding: 20px;
+		width: 50%;
+		border-radius: 25px;
+		border: 5px solid $primary-color;
+		&:hover{
+			border: 5px solid white;	
+			background: $primary-color;
+			color: white;
+			cursor: pointer;
+		}	
+	}
+}

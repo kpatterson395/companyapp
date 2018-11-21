@@ -1,0 +1,26 @@
+$primary-color: #1a2930;
+$delete-color: #990000;
+
+%button {
+	color: white;
+	text-decoration: none;
+	border-radius: 10px;
+	background: $primary-color;	
+}
+
+%dashboard {
+	background: white;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px #f7f7f7;
+	width: 40%;
+	margin: auto;
+	padding: 20px;		
+}
+
+
+%input {
+	display: block;
+	margin: 20px auto;
+	padding: 10px 15px;
+	width: 50%;
+}

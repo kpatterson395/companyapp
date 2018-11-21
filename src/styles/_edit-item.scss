@@ -1,0 +1,22 @@
+.edit-item{
+	input, select {
+		@extend %input;
+	}
+	input[type="submit"]{
+		@extend %button;
+		&:hover{
+			border: 1px solid $primary-color;
+			background: white;
+			cursor: pointer;
+			color: $primary-color;
+		}	
+	}	
+	@media (max-width: 768px){
+		input, select {
+				width: 90%;
+			}
+	}
+}
+
+
+

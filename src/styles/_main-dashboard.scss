@@ -1,0 +1,22 @@
+.main-dashboard{
+	@extend %dashboard;
+	color: $primary-color;
+	.item-link {
+		text-decoration: none;
+		color: $primary-color
+	}
+	.item-dashboard-new {
+		margin: 70px;
+	}
+	@media (max-width: 768px){
+		width: 100%;
+		border-radius: 0;
+		h3 {
+			font-size: 12px;
+		}
+		.item-dashboard-new {
+			margin: 20px;
+
+		}
+	}
+}

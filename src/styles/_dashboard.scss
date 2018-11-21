@@ -1,0 +1,29 @@
+.dashboard {
+	@extend %dashboard;	
+
+		p {
+			margin: 50px;
+				.dashboard-links{
+					@extend %button;
+					padding: 10px;
+					margin: 20px;
+					&:hover{
+						border: 1px solid $primary-color;
+						background: white;
+						cursor: pointer;
+						color: $primary-color;
+					}
+			}
+		}
+		
+		@media (max-width: 768px){
+			width:100%;
+			border-radius: 0;
+			font-size: 10px;
+			p{
+				.dashboard-links{
+					margin: 0;
+				}
+			}
+		}	
+}

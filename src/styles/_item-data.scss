@@ -1,0 +1,48 @@
+.item-data {
+	@extend %dashboard;
+	button {
+		@extend %button;
+	}
+	.delete-button {
+		margin: 20px auto;
+		padding: 10px 15px;
+		width: 200px;
+		background: $delete-color;
+		&:hover{
+			border: 1px solid $delete-color;
+			background: white;
+			cursor: pointer;
+			color: $delete-color;
+		}
+
+	}
+
+	.edit-button {
+		display: block;
+		margin: 20px auto;
+		padding: 5px;
+		width: 70px;
+		&:hover{
+			border: 1px solid $primary-color;
+			background: white;
+			cursor: pointer;
+			color: $primary-color;
+		}		
+	}
+
+	.item-data-projects{
+		margin: 100px;
+		.item-projects-links{
+			color: $primary-color;
+			text-decoration: none;
+			&:hover{
+				cursor: pointer;
+			}
+		}
+	}
+	
+	@media (max-width: 768px){
+		width: 100%;
+		border-radius: 0;
+	}
+}
